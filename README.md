@@ -1,0 +1,2 @@
+# config-general
+Configuraciones Generales
