@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  admin_db:
+    container_name: SICO_DB
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: aLeiXei2vu3peipohGae
+      MARIADB_ROOT_PASSWORD: aLeiXei2vu3peipohGae
+      MYSQL_DATABASE: admin
+    ports:
+      - '3306:3306'
+    volumes:
+      - /home/.dbs:/var/lib/mysql
+      - /home/scripts/:/load_file/
