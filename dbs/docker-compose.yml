@@ -12,5 +12,5 @@ services:
     ports:
       - '3306:3306'
     volumes:
-      - /home/.dbs:/var/lib/mysql
-      - /home/scripts/:/load_file/
+      - ~/sico/.dbs:/var/lib/mysql
+      - /home/sico/user_ftp/:/load_file/
